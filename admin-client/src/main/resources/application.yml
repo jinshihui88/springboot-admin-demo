@@ -1,0 +1,45 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: admin-client
+  boot:
+    admin:
+      client:
+        # 1、Admin Server 地址：客户端启动后按周期向它注册
+        url: http://localhost:8080
+        instance:
+          # 2、在管理界面展示的应用名；不配置时默认取 spring.application.name
+          name: admin-client
+          # 3、注册携带的元数据，界面上可以直接查看
+          metadata:
+            team: platform
+            env: dev
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # 4、放开全部端点给 Admin Server 使用（生产环境应按需收敛）
+        include: "*"
+  endpoint:
+    health:
+      # 5、健康详情始终展示，否则界面上看不到组件级健康信息
+      show-details: always
+  info:
+    # 6、Spring Boot 2.6+ info 端点默认不暴露 env 内容，需显式开启
+    env:
+      enabled: true
+
+# info 端点内容，会展示在 Admin 界面的应用详情页
+info:
+  app:
+    name: admin-client
+    description: Spring Boot Admin 教程演示客户端
+    version: 1.0.0
+    author: xiaojin
+
+logging:
+  charset:
+    console: UTF-8

@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: admin-server
+  thymeleaf:
+    # Admin UI 由 spring-boot-admin-server-ui 自带，不走 classpath:/templates/
+    # 关闭模板目录检查，避免启动时无意义的 WARN
+    check-template-location: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always

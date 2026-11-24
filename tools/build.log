@@ -1,0 +1,79 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] springboot-admin-demo                                              [pom]
+[INFO] admin-server                                                       [jar]
+[INFO] admin-client                                                       [jar]
+[INFO] 
+[INFO] -----------------< com.example:springboot-admin-demo >------------------
+[INFO] Building springboot-admin-demo 1.0.0                               [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] ----------------------< com.example:admin-server >----------------------
+[INFO] Building admin-server 1.0.0                                        [2/3]
+[INFO]   from admin-server\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ admin-server ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ admin-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ admin-server ---
+[INFO] skip non existing resourceDirectory D:\project\springboot-admin-demo\admin-server\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ admin-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ admin-server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ admin-server ---
+[INFO] Building jar: D:\project\springboot-admin-demo\admin-server\target\admin-server-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ admin-server ---
+[INFO] Replacing main artifact D:\project\springboot-admin-demo\admin-server\target\admin-server-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to D:\project\springboot-admin-demo\admin-server\target\admin-server-1.0.0.jar.original
+[INFO] 
+[INFO] ----------------------< com.example:admin-client >----------------------
+[INFO] Building admin-client 1.0.0                                        [3/3]
+[INFO]   from admin-client\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ admin-client ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ admin-client ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ admin-client ---
+[INFO] skip non existing resourceDirectory D:\project\springboot-admin-demo\admin-client\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ admin-client ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ admin-client ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ admin-client ---
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ admin-client ---
+[INFO] Replacing main artifact D:\project\springboot-admin-demo\admin-client\target\admin-client-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to D:\project\springboot-admin-demo\admin-client\target\admin-client-1.0.0.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for springboot-admin-demo 1.0.0:
+[INFO] 
+[INFO] springboot-admin-demo .............................. SUCCESS [  0.001 s]
+[INFO] admin-server ....................................... SUCCESS [  1.497 s]
+[INFO] admin-client ....................................... SUCCESS [  0.093 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.864 s
+[INFO] Finished at: 2026-11-23T17:54:10+08:00
+[INFO] ------------------------------------------------------------------------
